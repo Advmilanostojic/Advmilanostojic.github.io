@@ -22,6 +22,7 @@
     doAnimations($firstAnimatingElems);
 
     $myCarousel.on('slide.bs.carousel', function (e) {
+        return;
         var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
         doAnimations($animatingElems);
     });
